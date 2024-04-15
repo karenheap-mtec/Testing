@@ -23,9 +23,7 @@ class LoginPage extends Page {
     get headerError () {
         return $('h3[data-test="error"]');
     }
-
-
-    
+  
 
     /**
      * a method to encapsule automation code to interact with the page
