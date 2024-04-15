@@ -8,14 +8,19 @@ class SecurePage extends Page {
     /**
      * define selectors using getter methods
      */
-    //get logoutPage () {
-       // return $('#logout_sidebar_link');
-    //}
-//}
 
-get flashAlert () {
-    return $('#logout_sidebar_link');
-}
+    get logoutLink () {
+        return $('#logout_sidebar_link');
+    }
+
+    get btnAddToCart () {
+        return $('#add-to-cart-sauce-labs-backpack');
+    }
+
+    get btnRemoveFromCart () {
+        return $('#remove-sauce-labs-backpack');
+    }
+
 }
 
 export default new SecurePage();

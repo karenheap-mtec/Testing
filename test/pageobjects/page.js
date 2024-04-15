@@ -5,6 +5,13 @@ import { browser } from '@wdio/globals'
 * that is shared across all page objects
 */
 export default class Page {
+    get loginPageURL () {
+        return 'https://www.saucedemo.com/'
+    }
+
+    get loginRedirectURL () {
+        return 'https://www.saucedemo.com/inventory.html'
+    }
     /**
     * Opens a sub page of the page
     * @param path path of the sub page (e.g. /path/to/page.html)
