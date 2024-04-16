@@ -25,6 +25,15 @@ class InventoryPage extends Page {
         return $('#inventory_container')
     }
 
+    get dropDownSort () {
+        return $(".product_sort_container")
+    }
+    get resetAppStateLink () {
+        return $("#reset_sidebar_link")
+    }
+    get btnMenu () {
+        return $("#react-burger-menu-btn")
+    }
 }
 
 export default new InventoryPage();
